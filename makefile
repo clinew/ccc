@@ -66,3 +66,5 @@ install_actual:
 	@# Install header files.
 	@mkdir -p ${include_path}/ccc
 	@cp -f *.h ${include_path}/ccc/
+	@# Make header files readable to all.
+	@chmod 0744 ${include_path}/ccc/*.h
